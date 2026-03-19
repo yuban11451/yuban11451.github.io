@@ -57,13 +57,13 @@
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/"
+                hreflang="ja"
+                href="http://localhost:1313/ja/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ja"
-                href="http://localhost:1313/ja/"
+                hreflang="zh-cn"
+                href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -85,11 +85,6 @@
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/post/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="ja"
                 href="http://localhost:1313/ja/post/"
                 />
@@ -97,6 +92,11 @@
                 rel="alternate"
                 hreflang="zh-tw"
                 href="http://localhost:1313/zh-tw/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/post/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -113,13 +113,13 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-tw"
-                href="http://localhost:1313/zh-tw/categories/test/"
+                hreflang="ja"
+                href="http://localhost:1313/ja/categories/test/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ja"
-                href="http://localhost:1313/ja/categories/test/"
+                hreflang="zh-tw"
+                href="http://localhost:1313/zh-tw/categories/test/"
                 />
     <xhtml:link
                 rel="alternate"

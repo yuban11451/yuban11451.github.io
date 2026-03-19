@@ -7,24 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>御坂11451</copyright>
-        <lastBuildDate>Thu, 19 Mar 2026 16:51:47 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Newnewnewindex</title>
-        <link>http://localhost:1313/p/newnewnewindex/</link>
-        <pubDate>Thu, 19 Mar 2026 16:51:47 +0800</pubDate>
-        
-        <guid>http://localhost:1313/p/newnewnewindex/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Myfirstblog</title>
-        <link>http://localhost:1313/p/myfirstblog/</link>
-        <pubDate>Sat, 17 Jan 2026 17:05:17 +0800</pubDate>
-        
-        <guid>http://localhost:1313/p/myfirstblog/</guid>
-        <description>&lt;h3 id=&#34;hello-world&#34;&gt;hello world
-&lt;/h3&gt;</description>
-        </item>
-        <item>
+        <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Chinese Test</title>
         <link>http://localhost:1313/p/test-chinese/</link>
         <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
