@@ -2,3 +2,7 @@ public
 resources
 .hugo_build.lock
 hugo.exe
+tools/BlogPusher/bin/
+tools/BlogPusher/obj/
+tools/BlogPusher/publish/
+一键推送博客.exe
