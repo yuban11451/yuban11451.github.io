@@ -23,9 +23,13 @@ if (string.IsNullOrWhiteSpace(branch))
 
 WriteInfo($"当前分支: {branch}");
 
+var message = args.Length > 0
+    ? string.Join(' ', args).Trim()
+    : $"Update blog {DateTime.Now:yyyy-MM-dd HH:mm:ss}";
+
 var hugoPath = Path.Combine(repoRoot, "hugo.exe");
-var hasHugoExe = File.Exists(hugoPath);
-var hugoCommand = hasHugoExe ? hugoPath : "hugo";
+var hugoCommand = File.Exists(hugoPath) ? hugoPath : "hugo";
+
 WriteStep("检查 Hugo 构建");
 if (!await Run(hugoCommand, "--minify", repoRoot))
 {
@@ -33,7 +37,20 @@ if (!await Run(hugoCommand, "--minify", repoRoot))
     return 1;
 }
 
-WriteStep("暂存所有改动");
+WriteStep("同步远端源码分支");
+if (!await Run("git", "fetch origin", repoRoot))
+{
+    Fail("git fetch 失败。请检查网络或 GitHub 登录状态。");
+    return 1;
+}
+
+if (!await Run("git", $"pull --ff-only origin {Quote(branch)}", repoRoot))
+{
+    Fail("git pull 失败。远端可能有新提交或存在冲突，请先手动处理后再运行。");
+    return 1;
+}
+
+WriteStep("暂存所有源码改动");
 if (!await Run("git", "add -A", repoRoot))
 {
     Fail("git add 失败。");
@@ -43,7 +60,7 @@ if (!await Run("git", "add -A", repoRoot))
 var stagedStatus = await Capture("git", "diff --cached --name-status", repoRoot);
 if (string.IsNullOrWhiteSpace(stagedStatus))
 {
-    WriteSuccess("没有需要提交的改动。");
+    WriteSuccess("没有需要提交的源码改动。");
     Pause();
     return 0;
 }
@@ -51,25 +68,21 @@ if (string.IsNullOrWhiteSpace(stagedStatus))
 WriteInfo("本次将提交:");
 Console.WriteLine(stagedStatus.Trim());
 
-var message = args.Length > 0
-    ? string.Join(' ', args).Trim()
-    : $"Update blog {DateTime.Now:yyyy-MM-dd HH:mm:ss}";
-
 WriteStep($"提交: {message}");
-if (!await Run("git", $"commit -m \"{EscapeArgument(message)}\"", repoRoot))
+if (!await Run("git", $"commit -m {Quote(message)}", repoRoot))
 {
     Fail("git commit 失败。");
     return 1;
 }
 
 WriteStep($"推送到 origin/{branch}");
-if (!await Run("git", $"push origin {branch}", repoRoot))
+if (!await Run("git", $"push origin {Quote(branch)}", repoRoot))
 {
     Fail("git push 失败。请检查网络、GitHub 登录状态或远端权限。");
     return 1;
 }
 
-WriteSuccess("推送完成。GitHub Actions 会自动构建并发布博客。");
+WriteSuccess("推送完成。GitHub Actions 会自动构建并发布到 main 分支。");
 Pause();
 return 0;
 
@@ -169,16 +182,18 @@ static async Task<ProcessResult> RunProcess(string fileName, string arguments, s
     return new ProcessResult(process.ExitCode, output.ToString());
 }
 
-static string EscapeArgument(string value)
+static string Quote(string value)
 {
-    return value.Replace("\\", "\\\\").Replace("\"", "\\\"");
+    return "\"" + value.Replace("\\", "\\\\").Replace("\"", "\\\"") + "\"";
 }
 
 static void WriteHeader(string text)
 {
+    Console.ForegroundColor = ConsoleColor.White;
     Console.WriteLine("========================================");
     Console.WriteLine(text);
     Console.WriteLine("========================================");
+    Console.ResetColor();
 }
 
 static void WriteStep(string text)

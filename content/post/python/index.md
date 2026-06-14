@@ -1,6 +1,6 @@
 +++
 date = '2026-06-13T01:22:48+08:00'
-draft = true
+draft = false
 title = 'Python'  
 
 image = 'helena-hertz-wWZzXlDpMog-unsplash.jpg.png'                                                     

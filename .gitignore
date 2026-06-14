@@ -5,4 +5,8 @@ hugo.exe
 tools/BlogPusher/bin/
 tools/BlogPusher/obj/
 tools/BlogPusher/publish/
+tools/BlogPusher/publish-single/
 一键推送博客.exe
+BlogPusher.dll
+BlogPusher.deps.json
+BlogPusher.runtimeconfig.json
