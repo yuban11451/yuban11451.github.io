@@ -63,7 +63,7 @@ else:
 
 ​           **else 是最后的港湾：当所有条件都不成立时，程序才会去找 else。**
 
-    ##   3.str 与 int
+    ##  3.str 与 int
 
 ``` 
 birth = input('birth: ')
