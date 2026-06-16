@@ -120,19 +120,15 @@ classmates
 
 ​          list 也可以套入list
 
-                  ```
-                  s = ['python',['asp','php'],'scheme']
-                  ```
+     s = ['python',['asp','php'],'scheme']
 
 
 
 ​        list 里面无元素
 
-     ``` 
      L = []
      len(L)
      0
-     ```
 
 
 

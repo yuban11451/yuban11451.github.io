@@ -73,9 +73,7 @@ else:
 
 ​    报错
 
-       Traceback (most recent call last):
-
-  File "<stdin>", line 1, in <module>
+Traceback (most recent call last): File "<stdin>", line 1, in <module>
 TypeError: unorderable types: str() > int()
 
 ​     因为input 返回数值为str str不能与整数比较 需要转换为int
