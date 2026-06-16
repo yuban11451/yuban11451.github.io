@@ -35,16 +35,13 @@ else:
 
 ##  2. 多次判断      
 
-     ``` 
-age >= 3
-if age >= 18:
-    print('adult')
-elif age >= 6:
-     print('teenager')
-else:
-    print('kid')
-     ```
-
+     age >= 3
+    if age >= 18:
+        print('adult')
+    elif age >= 6:
+         print('teenager')
+    else:
+        print('kid')
 ​    其中`elif`是`else if`的缩写
 
    ``` 
