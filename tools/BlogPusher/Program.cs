@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using System.Text;
+using System.Text.RegularExpressions;
 
 Console.OutputEncoding = Encoding.UTF8;
 Console.InputEncoding = Encoding.UTF8;
@@ -26,6 +27,12 @@ WriteInfo($"当前分支: {branch}");
 var message = args.Length > 0
     ? string.Join(' ', args).Trim()
     : $"Update blog {DateTime.Now:yyyy-MM-dd HH:mm:ss}";
+
+WriteStep("设置文章为默认显示");
+var publishedCount = PublishAllPosts(repoRoot);
+WriteInfo(publishedCount == 0
+    ? "没有发现草稿文章。"
+    : $"已将 {publishedCount} 篇草稿文章改为显示。");
 
 var hugoPath = Path.Combine(repoRoot, "hugo.exe");
 var hugoCommand = File.Exists(hugoPath) ? hugoPath : "hugo";
@@ -85,6 +92,35 @@ if (!await Run("git", $"push origin {Quote(branch)}", repoRoot))
 WriteSuccess("推送完成。GitHub Actions 会自动构建并发布到 main 分支。");
 Pause();
 return 0;
+
+static int PublishAllPosts(string repoRoot)
+{
+    var postDir = Path.Combine(repoRoot, "content", "post");
+    if (!Directory.Exists(postDir))
+    {
+        return 0;
+    }
+
+    var changed = 0;
+    foreach (var file in Directory.EnumerateFiles(postDir, "*.md", SearchOption.AllDirectories))
+    {
+        var text = File.ReadAllText(file, Encoding.UTF8);
+        var updated = Regex.Replace(
+            text,
+            @"(?m)^(\s*draft\s*[:=]\s*)true(\s*)$",
+            "${1}false$2");
+
+        if (updated == text)
+        {
+            continue;
+        }
+
+        File.WriteAllText(file, updated, new UTF8Encoding(encoderShouldEmitUTF8Identifier: false));
+        changed++;
+    }
+
+    return changed;
+}
 
 static string? FindRepoRoot(string startPath)
 {
