@@ -86,9 +86,7 @@ socer = 'a'
 
 
 
-1. case ['gcc', file1, *files]    
-
-[gcc 第一个文件 *剩余文件 ]
+1. case ['gcc', file1, *files]    [gcc 第一个文件 *剩余文件 ]
 
 2. 如果任何一个case没有匹配成功 程序会跳过这个match
 
