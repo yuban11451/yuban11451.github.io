@@ -46,11 +46,11 @@ socer = 'a'
  age = 15
  
  match age:
-     case x if x < 10:
-         print(f'< 10 years old: {x}')
+     case x if x < 10:       
+         print(f'< 10 years old: {x}')  #范围比较
      case 10:
-         print('10 years old.')
-     case 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18:
+         print('10 years old.')  #匹配
+     case 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18:         
          print('11~18 years old.')
      case 19:
          print('19 years old.')
@@ -59,7 +59,7 @@ socer = 'a'
  
  ```
 
-`match`语句还可以匹配列表，功能非常强大
+`match`语句还可以匹配列表是输出，功能非常强大
 
   ``` 
   args = ['gcc', 'hello.c', 'world.c']
