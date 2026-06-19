@@ -80,10 +80,8 @@ image = "matt-le-SJSpo9hQf7s-unsplash.jpg"
 
 / = ➗
 
-    ``` 
     10/3 
     3.3333333333333335
-    ```
 
 // = 除法保留整数
 
