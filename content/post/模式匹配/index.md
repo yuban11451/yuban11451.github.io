@@ -91,12 +91,14 @@ socer = 'a'
 
 
 
-1. case ['gcc', file1, *files]    [gcc 第一个文件 *剩余文件 ]
+1. case ['gcc', file1, *files]    
+
+   **[gcc 第一个文件 *剩余文件 ]**
 
 2. 如果任何一个case没有匹配成功 程序会跳过这个match
 
-3. case ['clean']: 这种写法是精确匹配，要求列表里有且仅有一个元素且内容为   'clean'。
+3. * case ['clean']: 这种写法是精确匹配，要求列表里有且仅有一个元素且内容为   'clean'。
 
-   case ['clean', *files]: 这种写法表示第一个是 'clean'，后面可以带零个或多个其他   内容。
+   * case ['clean', *files]: 这种写法表示第一个是 'clean'，后面可以带零个或多个其他   内容。
 
-   如果数据是 ['clean']，最精准的匹配方式是不带星号的 case ['clean']
+   * 如果数据是 ['clean']，最精准的匹配方式是不带星号的 case ['clean']
