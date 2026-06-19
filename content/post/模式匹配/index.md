@@ -5,6 +5,10 @@ title = '模式匹配'
 
 image = 'helena-hertz-wWZzXlDpMog-unsplash.jpg.png'   
 
+categories = [
+    "笔记"
+]
+
 +++
 
 # 针对若干个变量匹配
