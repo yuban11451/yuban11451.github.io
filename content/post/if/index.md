@@ -5,6 +5,11 @@ title = 'If'
 
 image = 'helena-hertz-wWZzXlDpMog-unsplash.jpg.png' 
 
+ categories = [
+    "学习笔记",
+    "python"
+]
+
 
 
 +++

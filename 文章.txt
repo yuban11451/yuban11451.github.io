@@ -1,2 +1,18 @@
 hugo new content post/文章名/index.md
-image = 'helena-hertz-wWZzXlDpMog-unsplash.jpg.png'   
+ 
+author = "Hugo Authors"#作者
+title = "Placeholder Text"#文章名
+date = "2019-03-09"#日期
+description = "Lorem Ipsum Dolor Si Amet" #简述
+categories = [
+    "Test",
+    "Test with whitespaces"
+]
+#分类
+tags = [
+    "markdown",
+    "text",
+    "tag with whitespaces"
+]
+#标签
+image = "matt-le-SJSpo9hQf7s-unsplash.jpg"#图片
