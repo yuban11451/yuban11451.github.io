@@ -23,7 +23,7 @@ categories = [
  if socer = 'a'
     print('socer is b')
  elif socer = 'b'
-    print('socer si b')
+    print('socer is b')
  elif socer = 'c'
     print('socer is c')
  else:
