@@ -63,17 +63,15 @@ IndexError: list index out of range
 
 3. **list 添加**
 
-* 添加后缀元素
+添加后缀元素                                                                                                                                                                                                      
 
-  ``` 
-  classmates.append('Adma')
-  classmates
-  ['Michael','Bob','Tracy','Adam']
-  ```
+ ``` 
+ classmates.append('Adma')
+ classmates
+ ['Michael','Bob','Tracy','Adam']
+ ```
 
-
-
-​       元素插定指定位置  选择位置 原元素位置推后一位
+元素插定指定位置  选择位置 原元素位置推后一位
 
 ``` 
 classamtes.insert(1,'Jack')
@@ -107,23 +105,23 @@ classmates
 
 
 
-3. 替换元素
+替换元素
 
-   ``` 
-   classmates[1] = 'Sarah'
-   classmates
-   ['Michael','Sarah',Tracy']    
-   ```
+``` 
+classmates[1] = 'Sarah'
+classmates
+['Michael','Sarah',Tracy']    
+```
 
-     元素可以不同
+  元素可以不同
 
-    ``` 
-   L= ['apple',123,ture]
-    ```
+``` 
+L= ['apple',123,ture]
+```
 
-   
 
-​          list 也可以套入list
+
+  list 也可以套入list
 
      s = ['python',['asp','php'],'scheme']
 
@@ -141,7 +139,7 @@ classmates
 
 
 
-​        tupe 与  list 非常相似  **tupe 无法修改**（更加安全）
+ tupe 与  list 非常相似  **tupe 无法修改**（更加安全）
 
     t = (1,2)
     t
