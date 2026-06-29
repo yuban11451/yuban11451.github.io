@@ -39,7 +39,7 @@ print(d['Adma'])
 由于一个key只能对应一个value，所以，多次对一个key放入value，后面的值会把前面的值冲掉：
 
 ``` 
-d=['jack'] = 90 
+d = ['jack'] = 90 
 print(d['jack'])
 ```
 
