@@ -31,7 +31,7 @@ NotebookLM 的故事始于 ***\*2023 年 5 月的 Google I/O 大会\****，当�
 
 ​                3. 一双手，聪明的脑子，和细心的眼睛
 
-![img_v3_0213a_6afd4f27-fceb-4649-ab37-785311b62ceg_MIDDLE](C:\Users\XOS\AppData\Roaming\LarkShell\sdk_storage\64c0475d03e4575081c99eeb016a5074\resources\images\img_v3_0213a_6afd4f27-fceb-4649-ab37-785311b62ceg_MIDDLE.webp)
+![img_v3_0213a_6afd4f27-fceb-4649-ab37-785311b62ceg_MIDDLE](img_v3_0213a_6afd4f27-fceb-4649-ab37-785311b62ceg_MIDDLE.webp)
 
 
 
@@ -55,7 +55,7 @@ NotebookLM 的故事始于 ***\*2023 年 5 月的 Google I/O 大会\****，当�
 
 
 
-![img_v3_0213a_57ce54b6-9b8b-4ef2-88bf-f351754e49fg_MIDDLE](C:\Users\XOS\AppData\Roaming\LarkShell\sdk_storage\64c0475d03e4575081c99eeb016a5074\resources\images\img_v3_0213a_57ce54b6-9b8b-4ef2-88bf-f351754e49fg_MIDDLE.webp)
+![img_v3_0213a_57ce54b6-9b8b-4ef2-88bf-f351754e49fg_MIDDLE](img_v3_0213a_57ce54b6-9b8b-4ef2-88bf-f351754e49fg_MIDDLE.webp)
 
 
 
@@ -63,7 +63,7 @@ NotebookLM 的故事始于 ***\*2023 年 5 月的 Google I/O 大会\****，当�
 
 点击创建笔记
 
-![img_v3_0213a_554e3f15-2367-4b43-bf54-0df9d3f0b96g_MIDDLE](C:\Users\XOS\AppData\Roaming\LarkShell\sdk_storage\64c0475d03e4575081c99eeb016a5074\resources\images\img_v3_0213a_554e3f15-2367-4b43-bf54-0df9d3f0b96g_MIDDLE.webp)
+![img_v3_0213a_554e3f15-2367-4b43-bf54-0df9d3f0b96g_MIDDLE](img_v3_0213a_554e3f15-2367-4b43-bf54-0df9d3f0b96g_MIDDLE.webp)
 
 
 
@@ -105,13 +105,13 @@ NotebookLM 的故事始于 ***\*2023 年 5 月的 Google I/O 大会\****，当�
 
 
 
-![img_v3_0213a_dc5c3ce0-cd6e-44d2-a30b-3e76ca2135eg_MIDDLE](C:\Users\XOS\AppData\Roaming\LarkShell\sdk_storage\64c0475d03e4575081c99eeb016a5074\resources\images\img_v3_0213a_dc5c3ce0-cd6e-44d2-a30b-3e76ca2135eg_MIDDLE.webp)
+![img_v3_0213a_dc5c3ce0-cd6e-44d2-a30b-3e76ca2135eg_MIDDLE](img_v3_0213a_dc5c3ce0-cd6e-44d2-a30b-3e76ca2135eg_MIDDLE.webp)
 
 打开notebooklm网站 将链接复制
 
 
 
-![img_v3_0213a_e947424b-278e-4bc1-a3d4-6a0c4fc3208g_MIDDLE](C:\Users\XOS\AppData\Roaming\LarkShell\sdk_storage\64c0475d03e4575081c99eeb016a5074\resources\images\img_v3_0213a_e947424b-278e-4bc1-a3d4-6a0c4fc3208g_MIDDLE.webp)
+![img_v3_0213a_e947424b-278e-4bc1-a3d4-6a0c4fc3208g_MIDDLE](img_v3_0213a_e947424b-278e-4bc1-a3d4-6a0c4fc3208g_MIDDLE.webp)
 
 点击创建
 
@@ -121,17 +121,17 @@ NotebookLM 的故事始于 ***\*2023 年 5 月的 Google I/O 大会\****，当�
 
 添加来源
 
-![img_v3_0213a_bbc91feb-b787-4c54-9d05-a4dab424fd4g_MIDDLE](C:\Users\XOS\AppData\Roaming\LarkShell\sdk_storage\64c0475d03e4575081c99eeb016a5074\resources\images\img_v3_0213a_bbc91feb-b787-4c54-9d05-a4dab424fd4g_MIDDLE.webp)
+![img_v3_0213a_bbc91feb-b787-4c54-9d05-a4dab424fd4g_MIDDLE](img_v3_0213a_bbc91feb-b787-4c54-9d05-a4dab424fd4g_MIDDLE.webp)
 
 ai对话框
 
-![img_v3_0213a_460dea50-d36e-4720-aea2-153cbc41d78g_MIDDLE](C:\Users\XOS\AppData\Roaming\LarkShell\sdk_storage\64c0475d03e4575081c99eeb016a5074\resources\images\img_v3_0213a_460dea50-d36e-4720-aea2-153cbc41d78g_MIDDLE.webp)
+![img_v3_0213a_460dea50-d36e-4720-aea2-153cbc41d78g_MIDDLE](img_v3_0213a_460dea50-d36e-4720-aea2-153cbc41d78g_MIDDLE.webp)
 
 
 
 studio
 
-![img_v3_0213a_e829f63d-fadb-4c0e-b89a-3546ea809f5g_MIDDLE](C:\Users\XOS\AppData\Roaming\LarkShell\sdk_storage\64c0475d03e4575081c99eeb016a5074\resources\images\img_v3_0213a_e829f63d-fadb-4c0e-b89a-3546ea809f5g_MIDDLE.webp)e)
+![img_v3_0213a_e829f63d-fadb-4c0e-b89a-3546ea809f5g_MIDDLE](img_v3_0213a_e829f63d-fadb-4c0e-b89a-3546ea809f5g_MIDDLE.webp)
 
 
 
@@ -191,7 +191,7 @@ def power(x, n):
 
 
 
-![img_v3_0213a_c188ecac-1a41-4874-83cd-4c9cb6a0870g_MIDDLE](C:\Users\XOS\AppData\Roaming\LarkShell\sdk_storage\64c0475d03e4575081c99eeb016a5074\resources\images\img_v3_0213a_c188ecac-1a41-4874-83cd-4c9cb6a0870g_MIDDLE.webp)
+![img_v3_0213a_c188ecac-1a41-4874-83cd-4c9cb6a0870g_MIDDLE](img_v3_0213a_c188ecac-1a41-4874-83cd-4c9cb6a0870g_MIDDLE.webp)
 
 
 
@@ -253,7 +253,7 @@ notebooklm会给出解释 ***\*仔细读并理解给出的解释：\****
 
  如此反复知道理解为止
 
-![img_v3_0213a_6413b691-f95d-4157-a9eb-67afe3e31ebg](C:\Users\XOS\AppData\Roaming\LarkShell\sdk_storage\64c0475d03e4575081c99eeb016a5074\resources\images\img_v3_0213a_6413b691-f95d-4157-a9eb-67afe3e31ebg.jpg)
+![img_v3_0213a_6413b691-f95d-4157-a9eb-67afe3e31ebg](img_v3_0213a_6413b691-f95d-4157-a9eb-67afe3e31ebg.jpg)
 
 
 
@@ -265,7 +265,7 @@ notebooklm会给出解释 ***\*仔细读并理解给出的解释：\****
 
 你可以把你理解的话丢给ai进行确认
 
-![img_v3_0213a_463e9309-8c1b-447c-b17a-438183c6b9fg](C:\Users\XOS\AppData\Roaming\LarkShell\sdk_storage\64c0475d03e4575081c99eeb016a5074\resources\images\img_v3_0213a_463e9309-8c1b-447c-b17a-438183c6b9fg.jpg)
+![img_v3_0213a_463e9309-8c1b-447c-b17a-438183c6b9fg](img_v3_0213a_463e9309-8c1b-447c-b17a-438183c6b9fg.jpg)
 
 
 
@@ -275,7 +275,7 @@ notebooklm会给出解释 ***\*仔细读并理解给出的解释：\****
 
 
 
-![img_v3_0213a_6e76be48-2214-4a91-b90f-a6439f733c3g](C:\Users\XOS\AppData\Roaming\LarkShell\sdk_storage\64c0475d03e4575081c99eeb016a5074\resources\images\img_v3_0213a_6e76be48-2214-4a91-b90f-a6439f733c3g.jpg)
+![img_v3_0213a_6e76be48-2214-4a91-b90f-a6439f733c3g](img_v3_0213a_6e76be48-2214-4a91-b90f-a6439f733c3g.jpg)
 
 你可以加深自己对这个知识点理解
 
@@ -309,11 +309,11 @@ ps：把所有的东西都理解透了后  我的建议按照网站的代码重�
 
 这里我点击测验
 
-![img_v3_0213a_cd63ec2c-7b93-4e6d-9371-43f29bb02a5g](C:\Users\XOS\AppData\Roaming\LarkShell\sdk_storage\64c0475d03e4575081c99eeb016a5074\resources\images\img_v3_0213a_cd63ec2c-7b93-4e6d-9371-43f29bb02a5g.jpg)
+![img_v3_0213a_cd63ec2c-7b93-4e6d-9371-43f29bb02a5g](img_v3_0213a_cd63ec2c-7b93-4e6d-9371-43f29bb02a5g.jpg)
 
 如果不太明白点击提示
 
-![img_v3_0213a_e7105017-31ae-422a-96bc-4e756c2fcfbg](C:\Users\XOS\AppData\Roaming\LarkShell\sdk_storage\64c0475d03e4575081c99eeb016a5074\resources\images\img_v3_0213a_e7105017-31ae-422a-96bc-4e756c2fcfbg.jpg)
+![img_v3_0213a_e7105017-31ae-422a-96bc-4e756c2fcfbg](img_v3_0213a_e7105017-31ae-422a-96bc-4e756c2fcfbg.jpg)
 
 选择错误选项
 
@@ -321,7 +321,7 @@ ps：把所有的东西都理解透了后  我的建议按照网站的代码重�
 
 notebooklm会给你解释
 
-![img_v3_0213a_03434089-1f83-45f9-b92b-1cf458c5a1ag](C:\Users\XOS\AppData\Roaming\LarkShell\sdk_storage\64c0475d03e4575081c99eeb016a5074\resources\images\img_v3_0213a_03434089-1f83-45f9-b92b-1cf458c5a1ag.jpg)
+![img_v3_0213a_03434089-1f83-45f9-b92b-1cf458c5a1ag](img_v3_0213a_03434089-1f83-45f9-b92b-1cf458c5a1ag.jpg)
 
 
 
@@ -333,7 +333,7 @@ notebooklm会给你解释
 
 
 
-![img_v3_0213a_8d7c024d-e5ba-4ac8-b1cc-78dc437c962g](C:\Users\XOS\AppData\Roaming\LarkShell\sdk_storage\64c0475d03e4575081c99eeb016a5074\resources\images\img_v3_0213a_8d7c024d-e5ba-4ac8-b1cc-78dc437c962g.jpg)
+![img_v3_0213a_8d7c024d-e5ba-4ac8-b1cc-78dc437c962g](img_v3_0213a_8d7c024d-e5ba-4ac8-b1cc-78dc437c962g.jpg)
 
 
 
@@ -345,7 +345,7 @@ notebooklm会给你解释
 
 这是我目前使用notebookml使用心得与体会
 
-![img_v3_0213a_8d7c024d-e5ba-4ac8-b1cc-78dc437c962g](C:\Users\XOS\AppData\Roaming\LarkShell\sdk_storage\64c0475d03e4575081c99eeb016a5074\resources\images\img_v3_0213a_8d7c024d-e5ba-4ac8-b1cc-78dc437c962g.jpg)
+![img_v3_0213a_8d7c024d-e5ba-4ac8-b1cc-78dc437c962g](img_v3_0213a_8d7c024d-e5ba-4ac8-b1cc-78dc437c962g.jpg)
 
 
 
@@ -357,4 +357,4 @@ notebooklm会给你解释
 
 see you 
 
-![img_v3_0213a_2ab61887-76c4-47ee-a1d4-e3955d60d5ag](C:\Users\XOS\AppData\Roaming\LarkShell\sdk_storage\64c0475d03e4575081c99eeb016a5074\resources\images\img_v3_0213a_2ab61887-76c4-47ee-a1d4-e3955d60d5ag.jpg)
+![img_v3_0213a_2ab61887-76c4-47ee-a1d4-e3955d60d5ag](img_v3_0213a_2ab61887-76c4-47ee-a1d4-e3955d60d5ag.jpg)
