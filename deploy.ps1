@@ -46,6 +46,11 @@ function GitHasChanges {
 $RepoRoot = $PSScriptRoot
 $HugoExe = Join-Path $RepoRoot "hugo.exe"
 
+$SourceBranch = (git -C $RepoRoot branch --show-current).Trim()
+if ([string]::IsNullOrWhiteSpace($SourceBranch)) {
+    throw "Cannot detect source branch."
+}
+
 if (-not $SkipBuild) {
     if (Test-Path $HugoExe) {
         Run $HugoExe @("--minify") $RepoRoot
@@ -55,23 +60,37 @@ if (-not $SkipBuild) {
     }
 }
 
-$SourceBranch = (git -C $RepoRoot branch --show-current).Trim()
-if ([string]::IsNullOrWhiteSpace($SourceBranch)) {
-    throw "Cannot detect source branch."
-}
-
-Run "git" @("fetch", "origin") $RepoRoot
-Run "git" @("pull", "--ff-only", "origin", $SourceBranch) $RepoRoot
 Run "git" @("add", "-A") $RepoRoot
 
 if (GitHasChanges $RepoRoot) {
     Run "git" @("commit", "-m", $Message) $RepoRoot
-    Run "git" @("push", "origin", $SourceBranch) $RepoRoot
 }
 else {
     Write-Host ""
     Write-Host "No source changes to commit." -ForegroundColor Green
 }
+
+Run "git" @("fetch", "origin") $RepoRoot
+$RemoteBranch = "origin/$SourceBranch"
+$RemoteExists = $false
+Push-Location $RepoRoot
+try {
+    git rev-parse --verify --quiet $RemoteBranch *> $null
+    $RemoteExists = ($LASTEXITCODE -eq 0)
+}
+finally {
+    Pop-Location
+}
+
+if ($RemoteExists) {
+    Run "git" @("pull", "--rebase", "origin", $SourceBranch) $RepoRoot
+}
+else {
+    Write-Host ""
+    Write-Host "Remote branch $RemoteBranch does not exist yet; push will create it." -ForegroundColor Yellow
+}
+
+Run "git" @("push", "origin", $SourceBranch) $RepoRoot
 
 Write-Host ""
 Write-Host "Deploy finished. GitHub Actions will publish the site to main." -ForegroundColor Green

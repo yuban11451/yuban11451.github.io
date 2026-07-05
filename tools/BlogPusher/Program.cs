@@ -2,94 +2,102 @@ using System.Diagnostics;
 using System.Text;
 using System.Text.RegularExpressions;
 
-Console.OutputEncoding = Encoding.UTF8;
+Console.OutputEncoding = new UTF8Encoding(encoderShouldEmitUTF8Identifier: false);
 Console.InputEncoding = Encoding.UTF8;
 
-var repoRoot = FindRepoRoot(AppContext.BaseDirectory);
+var repoRoot = FindRepoRoot(AppContext.BaseDirectory) ?? FindRepoRoot(Environment.CurrentDirectory);
 if (repoRoot is null)
 {
-    Fail("没有找到 Git 仓库。请把这个程序放在博客仓库目录里运行。");
+    Fail("Git repository was not found. Put this program in the blog repository and run it again.");
     return 1;
 }
 
-WriteHeader("一键推送博客");
-WriteInfo($"仓库目录: {repoRoot}");
+WriteHeader("Blog one-click push");
+WriteInfo($"Repository: {repoRoot}");
 
-var branch = (await Capture("git", "branch --show-current", repoRoot)).Trim();
+var branch = (await Capture("git", repoRoot, "branch", "--show-current")).Trim();
 if (string.IsNullOrWhiteSpace(branch))
 {
-    Fail("没有检测到当前分支。");
+    Fail("Current Git branch was not detected.");
     return 1;
 }
 
-WriteInfo($"当前分支: {branch}");
+WriteInfo($"Branch: {branch}");
 
 var message = args.Length > 0
     ? string.Join(' ', args).Trim()
     : $"Update blog {DateTime.Now:yyyy-MM-dd HH:mm:ss}";
 
-WriteStep("设置文章为默认显示");
+WriteStep("Set post drafts to published");
 var publishedCount = PublishAllPosts(repoRoot);
 WriteInfo(publishedCount == 0
-    ? "没有发现草稿文章。"
-    : $"已将 {publishedCount} 篇草稿文章改为显示。");
+    ? "No draft posts were found."
+    : $"Published {publishedCount} draft post(s).");
 
 var hugoPath = Path.Combine(repoRoot, "hugo.exe");
 var hugoCommand = File.Exists(hugoPath) ? hugoPath : "hugo";
 
-WriteStep("检查 Hugo 构建");
-if (!await Run(hugoCommand, "--minify", repoRoot))
+WriteStep("Build Hugo site");
+if (!await Run(hugoCommand, repoRoot, "--minify"))
 {
-    Fail("Hugo 构建失败，已停止推送。请先修复上面的错误。");
+    Fail("Hugo build failed. Fix the build errors above and run the push again.");
     return 1;
 }
 
-WriteStep("同步远端源码分支");
-if (!await Run("git", "fetch origin", repoRoot))
+WriteStep("Stage blog source changes");
+if (!await Run("git", repoRoot, "add", "-A"))
 {
-    Fail("git fetch 失败。请检查网络或 GitHub 登录状态。");
+    Fail("git add failed.");
     return 1;
 }
 
-if (!await Run("git", $"pull --ff-only origin {Quote(branch)}", repoRoot))
+var stagedStatus = await Capture("git", repoRoot, "diff", "--cached", "--name-status");
+if (!string.IsNullOrWhiteSpace(stagedStatus))
 {
-    Fail("git pull 失败。远端可能有新提交或存在冲突，请先手动处理后再运行。");
+    WriteInfo("Files to commit:");
+    Console.WriteLine(stagedStatus.Trim());
+
+    WriteStep($"Commit: {message}");
+    if (!await Run("git", repoRoot, "commit", "-m", message))
+    {
+        Fail("git commit failed.");
+        return 1;
+    }
+}
+else
+{
+    WriteInfo("No new source changes to commit.");
+}
+
+WriteStep("Sync remote branch");
+if (!await Run("git", repoRoot, "fetch", "origin"))
+{
+    Fail("git fetch failed. Check network access, GitHub login, or repository permission.");
     return 1;
 }
 
-WriteStep("暂存所有源码改动");
-if (!await Run("git", "add -A", repoRoot))
+var remoteBranchExists = (await Capture("git", repoRoot, "rev-parse", "--verify", "--quiet", $"origin/{branch}")).Trim();
+if (!string.IsNullOrWhiteSpace(remoteBranchExists))
 {
-    Fail("git add 失败。");
+    if (!await Run("git", repoRoot, "pull", "--rebase", "origin", branch))
+    {
+        Fail("git pull --rebase failed. Resolve the conflict manually, then run the push again.");
+        return 1;
+    }
+}
+else
+{
+    WriteInfo($"Remote branch origin/{branch} does not exist yet; it will be created by push.");
+}
+
+WriteStep($"Push to origin/{branch}");
+if (!await Run("git", repoRoot, "push", "origin", branch))
+{
+    Fail("git push failed. Check network access, GitHub login, or repository permission.");
     return 1;
 }
 
-var stagedStatus = await Capture("git", "diff --cached --name-status", repoRoot);
-if (string.IsNullOrWhiteSpace(stagedStatus))
-{
-    WriteSuccess("没有需要提交的源码改动。");
-    Pause();
-    return 0;
-}
-
-WriteInfo("本次将提交:");
-Console.WriteLine(stagedStatus.Trim());
-
-WriteStep($"提交: {message}");
-if (!await Run("git", $"commit -m {Quote(message)}", repoRoot))
-{
-    Fail("git commit 失败。");
-    return 1;
-}
-
-WriteStep($"推送到 origin/{branch}");
-if (!await Run("git", $"push origin {Quote(branch)}", repoRoot))
-{
-    Fail("git push 失败。请检查网络、GitHub 登录状态或远端权限。");
-    return 1;
-}
-
-WriteSuccess("推送完成。GitHub Actions 会自动构建并发布到 main 分支。");
+WriteSuccess("Push finished. GitHub Actions will build and publish the site to the main branch.");
 Pause();
 return 0;
 
@@ -108,7 +116,8 @@ static int PublishAllPosts(string repoRoot)
         var updated = Regex.Replace(
             text,
             @"(?m)^(\s*draft\s*[:=]\s*)true(\s*)$",
-            "${1}false$2");
+            "${1}false$2",
+            RegexOptions.IgnoreCase);
 
         if (updated == text)
         {
@@ -138,25 +147,28 @@ static string? FindRepoRoot(string startPath)
     return null;
 }
 
-static async Task<bool> Run(string fileName, string arguments, string workingDirectory)
+static async Task<bool> Run(string fileName, string workingDirectory, params string[] arguments)
 {
-    var result = await RunProcess(fileName, arguments, workingDirectory, captureOutput: false);
+    var result = await RunProcess(fileName, workingDirectory, captureOutput: false, arguments);
     return result.ExitCode == 0;
 }
 
-static async Task<string> Capture(string fileName, string arguments, string workingDirectory)
+static async Task<string> Capture(string fileName, string workingDirectory, params string[] arguments)
 {
-    var result = await RunProcess(fileName, arguments, workingDirectory, captureOutput: true);
+    var result = await RunProcess(fileName, workingDirectory, captureOutput: true, arguments);
     return result.Output;
 }
 
-static async Task<ProcessResult> RunProcess(string fileName, string arguments, string workingDirectory, bool captureOutput)
+static async Task<ProcessResult> RunProcess(
+    string fileName,
+    string workingDirectory,
+    bool captureOutput,
+    params string[] arguments)
 {
     using var process = new Process();
     process.StartInfo = new ProcessStartInfo
     {
         FileName = fileName,
-        Arguments = arguments,
         WorkingDirectory = workingDirectory,
         UseShellExecute = false,
         RedirectStandardOutput = true,
@@ -164,6 +176,11 @@ static async Task<ProcessResult> RunProcess(string fileName, string arguments, s
         StandardOutputEncoding = Encoding.UTF8,
         StandardErrorEncoding = Encoding.UTF8
     };
+
+    foreach (var argument in arguments)
+    {
+        process.StartInfo.ArgumentList.Add(argument);
+    }
 
     var output = new StringBuilder();
 
@@ -218,11 +235,6 @@ static async Task<ProcessResult> RunProcess(string fileName, string arguments, s
     return new ProcessResult(process.ExitCode, output.ToString());
 }
 
-static string Quote(string value)
-{
-    return "\"" + value.Replace("\\", "\\\\").Replace("\"", "\\\"") + "\"";
-}
-
 static void WriteHeader(string text)
 {
     Console.ForegroundColor = ConsoleColor.White;
@@ -267,7 +279,7 @@ static void Fail(string text)
 static void Pause()
 {
     Console.WriteLine();
-    Console.Write("按 Enter 退出...");
+    Console.Write("Press Enter to exit...");
     Console.ReadLine();
 }
 
