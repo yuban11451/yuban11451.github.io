@@ -14,6 +14,7 @@ if (repoRoot is null)
 
 WriteHeader("Blog one-click push");
 WriteInfo($"Repository: {repoRoot}");
+EnableLocalProxyIfAvailable();
 
 var branch = (await Capture("git", repoRoot, "branch", "--show-current")).Trim();
 if (string.IsNullOrWhiteSpace(branch))
@@ -145,6 +146,50 @@ static string? FindRepoRoot(string startPath)
     }
 
     return null;
+}
+
+static void EnableLocalProxyIfAvailable()
+{
+    if (HasProxyEnvironment())
+    {
+        return;
+    }
+
+    foreach (var port in new[] { 7897, 7890, 7891, 1080, 10808, 8080 })
+    {
+        if (!CanConnect("127.0.0.1", port, TimeSpan.FromMilliseconds(300)))
+        {
+            continue;
+        }
+
+        var proxy = $"http://127.0.0.1:{port}";
+        Environment.SetEnvironmentVariable("HTTP_PROXY", proxy);
+        Environment.SetEnvironmentVariable("HTTPS_PROXY", proxy);
+        Environment.SetEnvironmentVariable("ALL_PROXY", proxy);
+        WriteInfo($"Using local proxy {proxy} for this push.");
+        return;
+    }
+}
+
+static bool HasProxyEnvironment()
+{
+    return !string.IsNullOrWhiteSpace(Environment.GetEnvironmentVariable("HTTPS_PROXY"))
+        || !string.IsNullOrWhiteSpace(Environment.GetEnvironmentVariable("HTTP_PROXY"))
+        || !string.IsNullOrWhiteSpace(Environment.GetEnvironmentVariable("ALL_PROXY"));
+}
+
+static bool CanConnect(string host, int port, TimeSpan timeout)
+{
+    using var client = new System.Net.Sockets.TcpClient();
+    try
+    {
+        var task = client.ConnectAsync(host, port);
+        return task.Wait(timeout) && client.Connected;
+    }
+    catch
+    {
+        return false;
+    }
 }
 
 static async Task<bool> Run(string fileName, string workingDirectory, params string[] arguments)

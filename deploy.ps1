@@ -43,8 +43,40 @@ function GitHasChanges {
     }
 }
 
+function EnableLocalProxyIfAvailable {
+    if ($env:HTTPS_PROXY -or $env:HTTP_PROXY -or $env:ALL_PROXY) {
+        return
+    }
+
+    $Ports = @(7897, 7890, 7891, 1080, 10808, 8080)
+    foreach ($Port in $Ports) {
+        $Client = [System.Net.Sockets.TcpClient]::new()
+        try {
+            $Connect = $Client.BeginConnect("127.0.0.1", $Port, $null, $null)
+            if (-not $Connect.AsyncWaitHandle.WaitOne(300, $false)) {
+                continue
+            }
+
+            $Client.EndConnect($Connect)
+            $Proxy = "http://127.0.0.1:$Port"
+            $env:HTTP_PROXY = $Proxy
+            $env:HTTPS_PROXY = $Proxy
+            $env:ALL_PROXY = $Proxy
+            Write-Host "Using local proxy $Proxy for this deploy." -ForegroundColor Yellow
+            return
+        }
+        catch {
+        }
+        finally {
+            $Client.Close()
+        }
+    }
+}
+
 $RepoRoot = $PSScriptRoot
 $HugoExe = Join-Path $RepoRoot "hugo.exe"
+
+EnableLocalProxyIfAvailable
 
 $SourceBranch = (git -C $RepoRoot branch --show-current).Trim()
 if ([string]::IsNullOrWhiteSpace($SourceBranch)) {
