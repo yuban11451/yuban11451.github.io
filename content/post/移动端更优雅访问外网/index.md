@@ -182,7 +182,7 @@ clashMetaForAndroid更新一点
 
 
 include
-![Screenshot_20260719_005858_SurfingTile](Screenshot_20260719_005858_SurfingTile.jpg)
+<img src="Screenshot_20260719_005858_SurfingTile.jpg" alt="Screenshot_20260719_005858_SurfingTile" style="zoom:25%;" />
 与exclude 理解为白名单与黑名单
 
 ### 当前模式----黑名单白名单
