@@ -179,13 +179,9 @@ clashMetaForAndroid更新一点
 
 ### 当你开启混合模式“MIXED:REDIRECT TCP + TUN UDP”或纯tun模式需配置
 
-
-
-<img src="Screenshot_20260719_005858_SurfingTile.jpg" alt="Screenshot_20260719_005858_SurfingTile" style="zoom:25%;" />
-
-
-
 include与exclude 理解为白名单与黑名单
+
+​                                          
 
 ### 当前模式----黑名单白名单
 
