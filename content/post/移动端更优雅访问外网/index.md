@@ -59,9 +59,10 @@ tags = [
 
  安装模块 
 
-<img src="E:\个人文件\博客\hugo_extended_withdeploy_0.154.5_windows-amd64\xxxx\content\post\移动端更优雅访问外网\Screenshot_20260717_193048_KernelSU.jpg" alt="Screenshot_20260717_193048_KernelSU" style="zoom:25%;" />
+<img src="Screenshot_20260717_193048_KernelSU.jpg" alt="Screenshot_20260717_193048_KernelSU" style="zoom:25%;" />
 
-lsp选择系统框架并重启<img src="E:\个人文件\博客\hugo_extended_withdeploy_0.154.5_windows-amd64\xxxx\content\post\移动端更优雅访问外网\Screenshot_20260719_005858_SurfingTile.jpg" alt="Screenshot_20260719_005858_SurfingTile" style="zoom:25%;" />
+lsp选择系统框架并重启
+<img src="Screenshot_20260719_005858_SurfingTile.jpg" alt="Screenshot_20260719_005858_SurfingTile" style="zoom:25%;" />
 
 
 
@@ -69,7 +70,7 @@ lsp选择系统框架并重启<img src="E:\个人文件\博客\hugo_extended_wit
 
 进入surfing app 
 
-<img src="E:\个人文件\博客\hugo_extended_withdeploy_0.154.5_windows-amd64\xxxx\content\post\移动端更优雅访问外网\Screenshot_20260717_193320_SurfingTile.jpg" alt="Screenshot_20260717_193320_SurfingTile" style="zoom:25%;" />
+<img src="Screenshot_20260717_193320_SurfingTile.jpg" alt="Screenshot_20260717_193320_SurfingTile" style="zoom:25%;" />
 
 
 
@@ -87,23 +88,23 @@ lsp选择系统框架并重启<img src="E:\个人文件\博客\hugo_extended_wit
 
 
 
-<img src="E:\个人文件\博客\hugo_extended_withdeploy_0.154.5_windows-amd64\xxxx\content\post\移动端更优雅访问外网\Screenshot_20260719_004646_SurfingTile.jpg" alt="Screenshot_20260719_004646_SurfingTile" style="zoom:25%;" />
+<img src="Screenshot_20260719_004646_SurfingTile.jpg" alt="Screenshot_20260719_004646_SurfingTile" style="zoom:25%;" />
 
 ## 配置
 
 点击第二栏的配置覆写
 
-<img src="C:\Users\XOS\Downloads/Screenshot_20260717_194020_SurfingTile.jpg" alt="Screenshot_20260717_194020_SurfingTile" style="zoom:25%;" />
+<img src="Screenshot_20260717_194020_SurfingTile.jpg" alt="Screenshot_20260717_194020_SurfingTile" style="zoom:25%;" />
 
 
 
 ## 订阅管理
 
-<img src="E:\个人文件\博客\hugo_extended_withdeploy_0.154.5_windows-amd64\xxxx\content\post\移动端更优雅访问外网\Screenshot_20260719_000545_SurfingTile.jpg" alt="Screenshot_20260719_000545_SurfingTile" style="zoom:25%;" />
+<img src="Screenshot_20260719_000545_SurfingTile.jpg" alt="Screenshot_20260719_000545_SurfingTile" style="zoom:25%;" />
 
 添加订阅
 
-<img src="E:\个人文件\博客\hugo_extended_withdeploy_0.154.5_windows-amd64\xxxx\content\post\移动端更优雅访问外网\Screenshot_20260719_000716_SurfingTile.jpg" alt="Screenshot_20260719_000716_SurfingTile" style="zoom:25%;" />
+<img src="Screenshot_20260719_000716_SurfingTile.jpg" alt="Screenshot_20260719_000716_SurfingTile" style="zoom:25%;" />
 
 复制订阅链接到URL
 
@@ -167,7 +168,7 @@ clashMetaForAndroid更新一点
 
  ## 应用过滤
 
-<img src="E:\个人文件\博客\hugo_extended_withdeploy_0.154.5_windows-amd64\xxxx\content\post\移动端更优雅访问外网\421f12a7a4a8666367a1779f7a407c56.jpg" alt="421f12a7a4a8666367a1779f7a407c56" style="zoom:25%;" />
+<img src="421f12a7a4a8666367a1779f7a407c56.jpg" alt="421f12a7a4a8666367a1779f7a407c56" style="zoom:25%;" />
 
 
 
@@ -177,7 +178,9 @@ clashMetaForAndroid更新一点
 
 
 
-include![Screenshot_20260719_005858_SurfingTile](E:\个人文件\博客\hugo_extended_withdeploy_0.154.5_windows-amd64\xxxx\content\post\移动端更优雅访问外网\Screenshot_20260719_005858_SurfingTile.jpg)与exclude 理解为白名单与黑名单
+include
+![Screenshot_20260719_005858_SurfingTile](Screenshot_20260719_005858_SurfingTile.jpg)
+与exclude 理解为白名单与黑名单
 
 ### 当前模式----黑名单白名单
 
@@ -205,7 +208,7 @@ https://xice.cx/posts/SurfingIssueOnSamsung/
 
 
 
-<img src="E:\个人文件\博客\hugo_extended_withdeploy_0.154.5_windows-amd64\xxxx\content\post\移动端更优雅访问外网\959c78d4d731cab0e1d3a00fddc6aba3.jpg" alt="959c78d4d731cab0e1d3a00fddc6aba3" style="zoom:25%;" />
+<img src="959c78d4d731cab0e1d3a00fddc6aba3.jpg" alt="959c78d4d731cab0e1d3a00fddc6aba3" style="zoom:25%;" />
 
 # end
 
