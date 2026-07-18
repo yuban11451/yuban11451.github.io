@@ -62,6 +62,7 @@ tags = [
 <img src="Screenshot_20260717_193048_KernelSU.jpg" alt="Screenshot_20260717_193048_KernelSU" style="zoom:25%;" />
 
 lsp选择系统框架并重启
+
 <img src="Screenshot_20260719_005858_SurfingTile.jpg" alt="Screenshot_20260719_005858_SurfingTile" style="zoom:25%;" />
 
 
@@ -113,6 +114,8 @@ lsp选择系统框架并重启
  保存确定
 
 ## 按需调试
+
+<img src="Screenshot_20260717_194020_SurfingTile.jpg" alt="Screenshot_20260717_194020_SurfingTile" style="zoom:25%;" />
 
 ### DNS模式
 
