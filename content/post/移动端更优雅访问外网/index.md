@@ -63,10 +63,6 @@ categories = [
 
 lsp选择系统框架并重启
 
-<img src="Screenshot_20260719_005858_SurfingTile.jpg" alt="Screenshot_20260719_005858_SurfingTile" style="zoom:25%;" />
-
-
-
 重启运行模块
 
 进入surfing app 
