@@ -3,11 +3,11 @@ date = '2026-07-17T19:11:43+08:00'
 draft = false
 title = '移动端更优雅访问外网'    
 
-image = "137483887_p0_master1200.jpg"
+image = "137483887_p0_master1200.jpg"     
 
-tags = [
-    "代理",
-    "工具"
+categories = [
+    "工具",
+    "代理"
 ]
 
 +++
