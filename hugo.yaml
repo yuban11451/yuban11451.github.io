@@ -19,7 +19,7 @@ languages:
         weight: 1
         params:
             sidebar:
-                subtitle: 风吹哪页看哪页
+                subtitle: 思考 判断 action
 
 services:
     # Change it to your Disqus shortname before using
