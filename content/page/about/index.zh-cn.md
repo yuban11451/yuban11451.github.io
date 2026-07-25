@@ -7,4 +7,4 @@ menu:
             icon: user
 ---
 
-This is a test page for i18n support.
+欢迎来到我的博客 此博客作为我日常分享和学习记录 谢谢喵 (=｀ω´=)
