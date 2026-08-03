@@ -24,7 +24,7 @@ categories = [
 ```
 void main(){
     String text = "hello,world"; //注意大写 S
-    print(text)
+    print(text)；
 }
 ```
 
@@ -37,9 +37,9 @@ String text 变量
 ```
 void main(){
     String text = "hello,world";
-    print(text)
+    print(text)；
     text = "hello,Dart";//String为变量可被定义
-    print(txet)
+    print(txet)；
 }
 ```
 
@@ -56,7 +56,7 @@ string 属性名 = ‘文本内容$变量名’； 或String 变量名 = ‘文�
 void main(){
    String content = '张三';
    String content1 = '我要和$content一起去吃饭';
-
+   print(conternt2);
 }
 ```
 
@@ -67,7 +67,7 @@ void main(){
 ```
 void main(){
     String cotent = '我要${DateTime.now()'学习dart’;
-    print(cotent)
+    print(cotent)；
 }
 ```
 
