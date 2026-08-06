@@ -7,6 +7,7 @@ categories = [
     "dart",
     "学习笔记"
 ]
+aliases = ['dart和字符串']
 +++
 
 ---
