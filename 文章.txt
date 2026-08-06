@@ -1,5 +1,5 @@
 hugo new content post/文章名/index.md
- 
+
 author = "Hugo Authors"#作者
 title = "Placeholder Text"#文章名
 date = "2019-03-09"#日期
