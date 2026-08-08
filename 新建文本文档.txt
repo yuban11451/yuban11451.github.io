@@ -1,1 +1,1 @@
-hugo new content post/Dart数字类型/index.md
+hugo new content post/Dart和字符串/index.md
