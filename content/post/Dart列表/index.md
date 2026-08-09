@@ -52,7 +52,7 @@ void main(){
  print(students);
  students.removeLast();
  print(students);
- students.removeRange(0,5);
+ students.removeRange(0,4);
  print(students);
 }
 ```
@@ -62,5 +62,6 @@ void main(){
 [小明 小红 小刚 小芳 小芳]
 [小明 小红 小刚 小芳 小芳 小王 小夏]
 [小明 小红 小刚 小芳 小王 小夏]
-[小夏]
+[小明 小红 小刚 小芳 小王]
+[小王]
 ```
