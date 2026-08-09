@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>工具 on 御坂11451</title><link>https://yuban11451.github.io/categories/%E5%B7%A5%E5%85%B7/</link><description>Recent content in 工具 on 御坂11451</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>御坂11451</copyright><lastBuildDate>Fri, 17 Jul 2026 19:11:43 +0800</lastBuildDate><atom:link href="https://yuban11451.github.io/categories/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>移动端更优雅访问外网</title><link>https://yuban11451.github.io/p/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%9B%B4%E4%BC%98%E9%9B%85%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%91/</link><pubDate>Fri, 17 Jul 2026 19:11:43 +0800</pubDate><guid>https://yuban11451.github.io/p/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%9B%B4%E4%BC%98%E9%9B%85%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%91/</guid><description>&lt;img src="https://yuban11451.github.io/p/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%9B%B4%E4%BC%98%E9%9B%85%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%91/137483887_p0_master1200.jpg" alt="Featured image of post 移动端更优雅访问外网" /&gt;&lt;h1 id="使用surfing需求以及surfing模块介绍"&gt;&lt;strong&gt;使用surfing需求以及surfing模块介绍&lt;/strong&gt;
+&lt;/h1&gt;&lt;p&gt;我有很多需要翻到外网的需求&lt;/p&gt;
+&lt;p&gt;但是众所周知原因 在大陆使用外网很麻烦&lt;/p&gt;
+&lt;p&gt;启用clash 等待节点启动 打开谷歌服务 然后在打开网站app&lt;/p&gt;
+&lt;p&gt;有些过于麻烦 且代理软件全局代理会影响国内软件正常使用&lt;/p&gt;
+&lt;p&gt;我们可以使用surfing模块解决以上问题&lt;/p&gt;
+&lt;p&gt;以下是surfing模块介绍：&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://github.com/GitMetaio/Surfing" target="_blank" rel="noopener"
+&gt;GitMetaio/Surfing: Magisk and KernelSU modules for Clash/mihomo services.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;本项目为 Clash/mihomo、sing-box、v2ray、xray、hysteria 的 &lt;a class="link" href="https://github.com/topjohnwu/Magisk" target="_blank" rel="noopener"
+&gt;Magisk&lt;/a&gt; 、 &lt;a class="link" href="https://github.com/tiann/KernelSU" target="_blank" rel="noopener"
+&gt;Kernelsu&lt;/a&gt; 、 &lt;a class="link" href="https://github.com/bmax121/APatch" target="_blank" rel="noopener"
+&gt;APatch&lt;/a&gt; 模块。支持 REDIRECT（仅 TCP）、TPROXY（TCP + UDP）透明代理，支持 TUN（TCP + UDP）亦可 REDIRECT（TCP）+ TUN（UDP） 混合模式代理。&lt;/p&gt;
+&lt;p&gt;基于上游为集成式一体服务、开箱即用
+此适用以下人群：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;懒癌&lt;/li&gt;
+&lt;li&gt;小白&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;项目主题及配置仅围绕 &lt;a class="link" href="https://github.com/MetaCubeX/Clash.Meta" target="_blank" rel="noopener"
+&gt;Clash/mihomo.Meta&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="准备工作"&gt;准备工作
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;一部已经解锁并root的安卓手机&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;下载好模块zip &lt;a class="link" href="https://github.com/GitMetaio/Surfing" target="_blank" rel="noopener"
+&gt;GitMetaio/Surfing: Magisk and KernelSU modules for Clash/mihomo services.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;3.熟悉并熟练使用root权限与模块加载&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一个代理节点（&lt;strong&gt;提前查明自己的节点支持客户端和格式&lt;/strong&gt;）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;安装模块&lt;/p&gt;
+&lt;img src="Screenshot_20260717_193048_KernelSU.jpg" alt="Screenshot_20260717_193048_KernelSU" style="zoom:25%;" /&gt;
+&lt;p&gt;lsp选择系统框架并重启&lt;/p&gt;
+&lt;p&gt;重启运行模块&lt;/p&gt;
+&lt;p&gt;进入surfing app&lt;/p&gt;
+&lt;img src="Screenshot_20260717_193320_SurfingTile.jpg" alt="Screenshot_20260717_193320_SurfingTile" style="zoom:25%;" /&gt;
+&lt;p&gt;目前我们常用的&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;第一栏logo 点击后可以对app就行更新&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第二栏 对代理进行配置&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;目前我们代理是没有启动状态 需要我们进行配置&lt;/p&gt;
+&lt;p&gt;点击下栏的设置&lt;/p&gt;
+&lt;img src="Screenshot_20260719_004646_SurfingTile.jpg" alt="Screenshot_20260719_004646_SurfingTile" style="zoom:25%;" /&gt;
+&lt;h2 id="配置"&gt;配置
+&lt;/h2&gt;&lt;p&gt;点击第二栏的配置覆写&lt;/p&gt;
+&lt;img src="Screenshot_20260717_194020_SurfingTile.jpg" alt="Screenshot_20260717_194020_SurfingTile" style="zoom:25%;" /&gt;
+&lt;h2 id="订阅管理"&gt;订阅管理
+&lt;/h2&gt;&lt;img src="Screenshot_20260719_000545_SurfingTile.jpg" alt="Screenshot_20260719_000545_SurfingTile" style="zoom:25%;" /&gt;
+&lt;p&gt;添加订阅&lt;/p&gt;
+&lt;img src="Screenshot_20260719_000716_SurfingTile.jpg" alt="Screenshot_20260719_000716_SurfingTile" style="zoom:25%;" /&gt;
+&lt;p&gt;复制订阅链接到URL&lt;/p&gt;
+&lt;p&gt;保存确定&lt;/p&gt;
+&lt;h2 id="按需调试"&gt;按需调试
+&lt;/h2&gt;&lt;img src="Screenshot_20260717_194020_SurfingTile.jpg" alt="Screenshot_20260717_194020_SurfingTile" style="zoom:25%;" /&gt;
+&lt;h3 id="dns模式"&gt;DNS模式
+&lt;/h3&gt;&lt;p&gt;Fake-IP（假IP）模式（目前最主流）
+代理软件不等待真实DNS结果，而是立即返回一个保留IP（如 198.18.x.x）给应用，同时后台去查真实IP。&lt;/p&gt;
+&lt;p&gt;优点：极速响应、无DNS污染，且分流只看域名，不需要等IP，效率极高。&lt;/p&gt;
+&lt;p&gt;缺点：部分不联网的本地服务或日志记录可能会留下“假IP”。&lt;/p&gt;
+&lt;p&gt;Redir-Host（真实IP模式）（传统模式）
+应用发起请求时，代理必须先向DNS服务器查询到真实IP，再用这个IP去匹配规则（如IP段）、发起连接。&lt;/p&gt;
+&lt;p&gt;· 优点：兼容性最好，所有应用都认真实IP。&lt;/p&gt;
+&lt;p&gt;· 缺点：慢（必须等DNS响应）；容易被ISP或GFW污染；且在TUN模式下，可能因为拿不到IP导致请求卡死。&lt;/p&gt;
+&lt;h3 id="入站模式"&gt;入站模式
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;REDIRECT（重定向）：传统Linux方法，靠修改数据包目标地址来劫持流量。仅支持TCP（不支持UDP，比如游戏语音、DNS会失效），且会丢失原始目标IP，可能导致分流不准。优点是资源占用极低。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TPROXY（透明代理）：REDIRECT的升级版。完美支持TCP+UDP，且不修改数据包头部，能完整保留原始目标IP，分流最精准。对游戏、VoIP等UDP应用最友好，是目前透明代理的最优解。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TUN（虚拟网卡）：在系统创建虚拟网卡，从更底层接管所有IP层数据（TCP/UDP/ICMP）。兼容性最强（连Ping都能代理），但性能开销最大，且在全局模式下最容易产生“意外流量”导致堆钱。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;“MIXED:REDIRECT TCP + TUN UDP” 是混合模式——即TCP走REDIRECT，UDP走TUN。兼顾了TCP的低延迟和UDP的兼容性，但在IP纯净度上不如纯TPROXY。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;纯TUN：所有流量（TCP+UDP+ICMP）全部强制塞进TUN虚拟网卡。系统层面完全感知不到代理，兼容性最强（连Ping命令都能走代理），且分流只看域名，极其精准。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="user-agent"&gt;user-Agent
+&lt;/h3&gt;&lt;p&gt;影响代理软件“自己”对外访问时的身份。&lt;/p&gt;
+&lt;p&gt;看机场支持客户端&lt;/p&gt;
+&lt;p&gt;clashwindows支持度更广&lt;/p&gt;
+&lt;p&gt;clashMetaForAndroid更新一点&lt;/p&gt;
+&lt;h1 id="配置完成右上角保存"&gt;&lt;strong&gt;配置完成右上角保存&lt;/strong&gt;
+&lt;/h1&gt;&lt;h2 id="应用过滤"&gt;应用过滤
+&lt;/h2&gt;&lt;img src="421f12a7a4a8666367a1779f7a407c56.jpg" alt="421f12a7a4a8666367a1779f7a407c56" style="zoom:25%;" /&gt;
+&lt;h3 id="tun过滤"&gt;tun过滤
+&lt;/h3&gt;&lt;h3 id="当你开启混合模式mixedredirect-tcp--tun-udp或纯tun模式需配置"&gt;当你开启混合模式“MIXED:REDIRECT TCP + TUN UDP”或纯tun模式需配置
+&lt;/h3&gt;&lt;p&gt;include与exclude 理解为白名单与黑名单&lt;/p&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;h3 id="当前模式-黑名单白名单"&gt;当前模式&amp;mdash;-黑名单白名单
+&lt;/h3&gt;&lt;p&gt;顾名思义黑名单白名单过滤代理&lt;/p&gt;
+&lt;p&gt;为了更好的环境我一般选择黑名单&lt;/p&gt;
+&lt;p&gt;但可能会遇到电话打不通 和短信接受延迟&lt;/p&gt;
+&lt;h4 id="黑名单问题解决方案"&gt;黑名单问题解决方案
+&lt;/h4&gt;&lt;p&gt;&lt;a class="link" href="https://xice.cx/posts/SurfingIssueOnSamsung/" target="_blank" rel="noopener"
+&gt;https://xice.cx/posts/SurfingIssueOnSamsung/&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id="配置完成右上角保存-1"&gt;&lt;strong&gt;配置完成右上角保存&lt;/strong&gt;
+&lt;/h1&gt;&lt;h1 id="启动服务"&gt;启动服务
+&lt;/h1&gt;&lt;p&gt;返回主菜单&lt;/p&gt;
+&lt;p&gt;点击启动服务&lt;/p&gt;
+&lt;img src="959c78d4d731cab0e1d3a00fddc6aba3.jpg" alt="959c78d4d731cab0e1d3a00fddc6aba3" style="zoom:25%;" /&gt;
+&lt;h1 id="end"&gt;end
+&lt;/h1&gt;&lt;p&gt;冲浪&lt;/p&gt;</description></item><item><title>Notebookml个人使用经验</title><link>https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/</link><pubDate>Sun, 05 Jul 2026 18:12:10 +0800</pubDate><guid>https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/</guid><description>&lt;img src="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Notebookml个人使用经验" /&gt;&lt;h1 id="notebookml使用心得"&gt;notebookml使用心得
+&lt;/h1&gt;&lt;p&gt;NotebookLM 的故事始于 &lt;em&gt;&lt;strong&gt;*2023 年 5 月的 Google I/O 大会*&lt;/strong&gt;&lt;/em&gt;，当时它以“Project Tailwind”之名首次亮相。 这款最初被定义为“主要是为学生设计的工具”的原型产品，其诞生初衷是“重新构想 AI 时代的笔记软件”。 该项目由知名科普作家 Steven Johnson 和产品经理 Raiza Martin 共同领导，旨在利用强大的语言模型重新定义笔记软件的核心形态。&lt;/p&gt;
+&lt;p&gt;我在悠然推荐下接触这款软件 对我自学有很大帮助 目前我的自学成果在 &lt;a class="link" href="https://yuban11451.github.io/" target="_blank" rel="noopener"
+&gt;新建标签页&lt;/a&gt; 展示&lt;/p&gt;
+&lt;h1 id="准备阶段"&gt;准备阶段：
+&lt;/h1&gt;&lt;p&gt;1.一个Google账号&lt;/p&gt;
+&lt;p&gt;​ 2. 魔法&lt;/p&gt;
+&lt;p&gt;​ 3. 一双手，聪明的脑子，和细心的眼睛&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_6afd4f27-fceb-4649-ab37-785311b62ceg_MIDDLE.webp"
+width="750"
+height="546"
+srcset="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_6afd4f27-fceb-4649-ab37-785311b62ceg_MIDDLE_hu_811a4b0ec75a822c.webp 480w, https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_6afd4f27-fceb-4649-ab37-785311b62ceg_MIDDLE_hu_a4308c09f99b26a5.webp 1024w"
+loading="lazy"
+alt="img_v3_0213a_6afd4f27-fceb-4649-ab37-785311b62ceg_MIDDLE"
+class="gallery-image"
+data-flex-grow="137"
+data-flex-basis="329px"
+&gt;&lt;/p&gt;
+&lt;p&gt;注 ：Google账号 我这边建议推荐购买google（淘宝拼多多都有 目前国内86账户风控严重 注册就封禁）&lt;/p&gt;
+&lt;p&gt;魔法 不做推荐 代理地区建议台湾 美国 新加坡 &lt;em&gt;&lt;strong&gt;*（不要选香港 审核严重无法使用）*&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;开启魔法（注意地区选择） 打开 &lt;a class="link" href="https://notebooklm.google.com/?icid=home_maincta&amp;amp;pli=1" target="_blank" rel="noopener"
+&gt;新建标签页&lt;/a&gt; 登录谷歌账号（移动端打开谷歌服务 play商店下载 这里只做pc网页端使用 但大体类似）&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_57ce54b6-9b8b-4ef2-88bf-f351754e49fg_MIDDLE.webp"
+width="750"
+height="729"
+srcset="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_57ce54b6-9b8b-4ef2-88bf-f351754e49fg_MIDDLE_hu_74a5b491d7adfe6d.webp 480w, https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_57ce54b6-9b8b-4ef2-88bf-f351754e49fg_MIDDLE_hu_8b9ee8adaf838fe1.webp 1024w"
+loading="lazy"
+alt="img_v3_0213a_57ce54b6-9b8b-4ef2-88bf-f351754e49fg_MIDDLE"
+class="gallery-image"
+data-flex-grow="102"
+data-flex-basis="246px"
+&gt;&lt;/p&gt;
+&lt;p&gt;点击创建笔记&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_554e3f15-2367-4b43-bf54-0df9d3f0b96g_MIDDLE.webp"
+width="750"
+height="784"
+srcset="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_554e3f15-2367-4b43-bf54-0df9d3f0b96g_MIDDLE_hu_962280fe1ad9a99e.webp 480w, https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_554e3f15-2367-4b43-bf54-0df9d3f0b96g_MIDDLE_hu_b760de3130b7a5d6.webp 1024w"
+loading="lazy"
+alt="img_v3_0213a_554e3f15-2367-4b43-bf54-0df9d3f0b96g_MIDDLE"
+class="gallery-image"
+data-flex-grow="95"
+data-flex-basis="229px"
+&gt;&lt;/p&gt;
+&lt;p&gt;按照选项你可以选择你所需要学习对象的文件 网站（注 如b站或者&lt;a class="link" href="http://linux.do/" target="_blank" rel="noopener"
+&gt;linux.do&lt;/a&gt;论坛无法爬取&lt;/p&gt;
+&lt;p&gt;你可以去自行复制B站视频字幕论坛网站内容选择复制文字粘贴解决&lt;/p&gt;
+&lt;p&gt;这里不再赘述）&lt;/p&gt;
+&lt;h1 id="使用案例"&gt;使用案例
+&lt;/h1&gt;&lt;p&gt;比如现在我在自学python 我使用自学网站为&lt;a class="link" href="https://liaoxuefeng.com/books/python/introduction/index.html" target="_blank" rel="noopener"
+&gt;简介 - Python教程 - 廖雪峰的官方网站&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;首先复制链接&lt;/p&gt;
+&lt;p&gt;复制链接 &lt;a class="link" href="https://liaoxuefeng.com/books/python/function/parameter/index.html" target="_blank" rel="noopener"
+&gt;函数的参数 - Python教程 - 廖雪峰的官方网站&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_dc5c3ce0-cd6e-44d2-a30b-3e76ca2135eg_MIDDLE.webp"
+width="750"
+height="784"
+srcset="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_dc5c3ce0-cd6e-44d2-a30b-3e76ca2135eg_MIDDLE_hu_64ad4be5fdccd3f8.webp 480w, https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_dc5c3ce0-cd6e-44d2-a30b-3e76ca2135eg_MIDDLE_hu_82a9e93fa60efa60.webp 1024w"
+loading="lazy"
+alt="img_v3_0213a_dc5c3ce0-cd6e-44d2-a30b-3e76ca2135eg_MIDDLE"
+class="gallery-image"
+data-flex-grow="95"
+data-flex-basis="229px"
+&gt;&lt;/p&gt;
+&lt;p&gt;打开notebooklm网站 将链接复制&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_e947424b-278e-4bc1-a3d4-6a0c4fc3208g_MIDDLE.webp"
+width="750"
+height="729"
+srcset="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_e947424b-278e-4bc1-a3d4-6a0c4fc3208g_MIDDLE_hu_44b034899653b2c8.webp 480w, https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_e947424b-278e-4bc1-a3d4-6a0c4fc3208g_MIDDLE_hu_558652ece8a94d47.webp 1024w"
+loading="lazy"
+alt="img_v3_0213a_e947424b-278e-4bc1-a3d4-6a0c4fc3208g_MIDDLE"
+class="gallery-image"
+data-flex-grow="102"
+data-flex-basis="246px"
+&gt;&lt;/p&gt;
+&lt;p&gt;点击创建&lt;/p&gt;
+&lt;p&gt;有三个页面：&lt;/p&gt;
+&lt;p&gt;添加来源&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_bbc91feb-b787-4c54-9d05-a4dab424fd4g_MIDDLE.webp"
+width="750"
+height="729"
+srcset="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_bbc91feb-b787-4c54-9d05-a4dab424fd4g_MIDDLE_hu_2559672f1ee1247d.webp 480w, https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_bbc91feb-b787-4c54-9d05-a4dab424fd4g_MIDDLE_hu_3ec31e7a53760f4b.webp 1024w"
+loading="lazy"
+alt="img_v3_0213a_bbc91feb-b787-4c54-9d05-a4dab424fd4g_MIDDLE"
+class="gallery-image"
+data-flex-grow="102"
+data-flex-basis="246px"
+&gt;&lt;/p&gt;
+&lt;p&gt;ai对话框&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_460dea50-d36e-4720-aea2-153cbc41d78g_MIDDLE.webp"
+width="750"
+height="729"
+srcset="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_460dea50-d36e-4720-aea2-153cbc41d78g_MIDDLE_hu_21aa297b393caa85.webp 480w, https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_460dea50-d36e-4720-aea2-153cbc41d78g_MIDDLE_hu_e2102b7b805b96ad.webp 1024w"
+loading="lazy"
+alt="img_v3_0213a_460dea50-d36e-4720-aea2-153cbc41d78g_MIDDLE"
+class="gallery-image"
+data-flex-grow="102"
+data-flex-basis="246px"
+&gt;&lt;/p&gt;
+&lt;p&gt;studio&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_e829f63d-fadb-4c0e-b89a-3546ea809f5g_MIDDLE.webp"
+width="750"
+height="729"
+srcset="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_e829f63d-fadb-4c0e-b89a-3546ea809f5g_MIDDLE_hu_aedc33f34116a73.webp 480w, https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_e829f63d-fadb-4c0e-b89a-3546ea809f5g_MIDDLE_hu_5746540ad711c605.webp 1024w"
+loading="lazy"
+alt="img_v3_0213a_e829f63d-fadb-4c0e-b89a-3546ea809f5g_MIDDLE"
+class="gallery-image"
+data-flex-grow="102"
+data-flex-basis="246px"
+&gt;&lt;/p&gt;
+&lt;p&gt;首先我们自学 不是一上来就库库点studio页面全部选一遍&lt;/p&gt;
+&lt;p&gt;首先我们目标是自学 先从学开始&lt;/p&gt;
+&lt;p&gt;先仔细研读一遍网页网站&lt;/p&gt;
+&lt;p&gt;这篇文章&lt;/p&gt;
+&lt;p&gt;我会发现有一段不懂&lt;/p&gt;
+&lt;p&gt;def power(x, n):&lt;/p&gt;
+&lt;p&gt;​ s = 1&lt;/p&gt;
+&lt;p&gt;​ while n &amp;gt; 0:&lt;/p&gt;
+&lt;p&gt;​ n = n - 1&lt;/p&gt;
+&lt;p&gt;​ s = s * x&lt;/p&gt;
+&lt;p&gt;​ return s&lt;/p&gt;
+&lt;p&gt;这行代码为什么要s = 1&lt;/p&gt;
+&lt;p&gt;这时候你可以去问notebookml&lt;/p&gt;
+&lt;p&gt;打开对话界面 将这行代码复制进对话框&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_c188ecac-1a41-4874-83cd-4c9cb6a0870g_MIDDLE.webp"
+width="750"
+height="546"
+srcset="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_c188ecac-1a41-4874-83cd-4c9cb6a0870g_MIDDLE_hu_fcf6be7251ac4b50.webp 480w, https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_c188ecac-1a41-4874-83cd-4c9cb6a0870g_MIDDLE_hu_c3a57ffe944cae36.webp 1024w"
+loading="lazy"
+alt="img_v3_0213a_c188ecac-1a41-4874-83cd-4c9cb6a0870g_MIDDLE"
+class="gallery-image"
+data-flex-grow="137"
+data-flex-basis="329px"
+&gt;&lt;/p&gt;
+&lt;p&gt;notebooklm会给出解释 &lt;em&gt;&lt;strong&gt;*仔细读并理解给出的解释：*&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;这段代码是用来计算 &lt;em&gt;&lt;strong&gt;*$x$ 的 $n$ 次方*&lt;/strong&gt;&lt;/em&gt;（即 $x^n$）的。&lt;/p&gt;
+&lt;p&gt;在大白话里，&lt;code&gt;s = 1&lt;/code&gt; 的意义可以从以下几个方面来理解：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;*乘法的“起步价”：*&lt;/strong&gt;&lt;/em&gt; 我们要算的是连乘（把 $n$ 个 $x$ 乘在一起）。在数学里，乘法的初始值必须是 &lt;em&gt;&lt;strong&gt;*1*&lt;/strong&gt;&lt;/em&gt;。就像你存钱一样，如果是计算翻倍，手里得先有“1块钱”作为基数，才能翻成2块、4块。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;*为什么不能是 0？*&lt;/strong&gt;&lt;/em&gt; 如果 &lt;code&gt;s = 0&lt;/code&gt;，那么在循环里执行 &lt;code&gt;s = s * x&lt;/code&gt; 时，无论 $x$ 是多少，结果永远是 &lt;code&gt;0 * x = 0&lt;/code&gt;。这样不管循环多少次，最后算出来的结果都是 0，这个函数就废了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;*对应数学逻辑：*&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;当 $n = 0$ 时（即 $x^0$），循环一次都不执行，函数直接返回 &lt;code&gt;s&lt;/code&gt; 的初始值 &lt;em&gt;&lt;strong&gt;*1*&lt;/strong&gt;&lt;/em&gt;。根据数学定义，任何非零数的 0 次方都等于 1，这刚好对上了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;当 $n = 1$ 时，循环执行一次，&lt;code&gt;s = 1 * x&lt;/code&gt;，结果就是 $x$ 本身。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;当 $n = 2$ 时，循环执行两次，&lt;code&gt;s&lt;/code&gt; 变成了 &lt;code&gt;1 * x * x&lt;/code&gt;，也就是 $x^2$。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;*总结一下：*&lt;/strong&gt;&lt;/em&gt; &lt;code&gt;s&lt;/code&gt; 在这里扮演的是一个“累乘器”的角色，它负责把每次循环里的 $x$ 给“攒”起来。为了不影响乘法的结果，必须用 &lt;em&gt;&lt;strong&gt;*1*&lt;/strong&gt;&lt;/em&gt; 作为初始值来开始累加。&lt;/p&gt;
+&lt;p&gt;如果你还无法理解 可以让notebooklm大白话解释&lt;/p&gt;
+&lt;p&gt;如果还是理解不了 选出不理解的地方提出问题&lt;/p&gt;
+&lt;p&gt;如此反复知道理解为止&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_6413b691-f95d-4157-a9eb-67afe3e31ebg.jpg"
+width="1557"
+height="1550"
+srcset="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_6413b691-f95d-4157-a9eb-67afe3e31ebg_hu_be6005338232a3b0.jpg 480w, https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_6413b691-f95d-4157-a9eb-67afe3e31ebg_hu_fc188c61594ca68a.jpg 1024w"
+loading="lazy"
+alt="img_v3_0213a_6413b691-f95d-4157-a9eb-67afe3e31ebg"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;*然后如何确定你确实理解了？*&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;你可以把你理解的话丢给ai进行确认&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_463e9309-8c1b-447c-b17a-438183c6b9fg.jpg"
+width="1557"
+height="1550"
+srcset="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_463e9309-8c1b-447c-b17a-438183c6b9fg_hu_c14d7a1e965ac204.jpg 480w, https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_463e9309-8c1b-447c-b17a-438183c6b9fg_hu_241163b6b6cc3429.jpg 1024w"
+loading="lazy"
+alt="img_v3_0213a_463e9309-8c1b-447c-b17a-438183c6b9fg"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+&gt;&lt;/p&gt;
+&lt;p&gt;当然你想更深入理解 你可以让ai出题&lt;/p&gt;
+&lt;p&gt;给我出类似的题目进行测验&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_6e76be48-2214-4a91-b90f-a6439f733c3g.jpg"
+width="1557"
+height="1550"
+srcset="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_6e76be48-2214-4a91-b90f-a6439f733c3g_hu_2864e3130e38225e.jpg 480w, https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_6e76be48-2214-4a91-b90f-a6439f733c3g_hu_c3c0a4cf69615f15.jpg 1024w"
+loading="lazy"
+alt="img_v3_0213a_6e76be48-2214-4a91-b90f-a6439f733c3g"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+&gt;&lt;/p&gt;
+&lt;p&gt;你可以加深自己对这个知识点理解&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;*模式框架就是：*&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;*选出你不理解的地方*&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;*说出你的不理解地方*&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;ps：把所有的东西都理解透了后 我的建议按照网站的代码重新敲一遍加深理解&lt;/p&gt;
+&lt;p&gt;最后收尾阶段&lt;/p&gt;
+&lt;p&gt;点击studio 选择闪卡和测验进行测试&lt;/p&gt;
+&lt;p&gt;（闪卡我推荐如公交地铁这种短时间空闲时间进行短时记忆与复习&lt;/p&gt;
+&lt;p&gt;大部分时间我推荐使用测验进行收尾工作&lt;/p&gt;
+&lt;p&gt;这里我点击测验&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_cd63ec2c-7b93-4e6d-9371-43f29bb02a5g.jpg"
+width="1557"
+height="1550"
+srcset="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_cd63ec2c-7b93-4e6d-9371-43f29bb02a5g_hu_ea6d6c1d89530540.jpg 480w, https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_cd63ec2c-7b93-4e6d-9371-43f29bb02a5g_hu_15325225012aa341.jpg 1024w"
+loading="lazy"
+alt="img_v3_0213a_cd63ec2c-7b93-4e6d-9371-43f29bb02a5g"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+&gt;&lt;/p&gt;
+&lt;p&gt;如果不太明白点击提示&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_e7105017-31ae-422a-96bc-4e756c2fcfbg.jpg"
+width="1557"
+height="1550"
+srcset="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_e7105017-31ae-422a-96bc-4e756c2fcfbg_hu_f56c74ec8cf84f8f.jpg 480w, https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_e7105017-31ae-422a-96bc-4e756c2fcfbg_hu_69385531206126f7.jpg 1024w"
+loading="lazy"
+alt="img_v3_0213a_e7105017-31ae-422a-96bc-4e756c2fcfbg"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+&gt;&lt;/p&gt;
+&lt;p&gt;选择错误选项&lt;/p&gt;
+&lt;p&gt;notebooklm会给你解释&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_03434089-1f83-45f9-b92b-1cf458c5a1ag.jpg"
+width="1558"
+height="1550"
+srcset="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_03434089-1f83-45f9-b92b-1cf458c5a1ag_hu_f6d011b7ddd2773e.jpg 480w, https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_03434089-1f83-45f9-b92b-1cf458c5a1ag_hu_fd1ee8189a30e4d5.jpg 1024w"
+loading="lazy"
+alt="img_v3_0213a_03434089-1f83-45f9-b92b-1cf458c5a1ag"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+&gt;&lt;/p&gt;
+&lt;p&gt;如果还是不太理解 选择解释跳转对话界面给出详细解释&lt;/p&gt;
+&lt;p&gt;还是不理解 &lt;em&gt;&lt;strong&gt;*按照上文方法继续*&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_8d7c024d-e5ba-4ac8-b1cc-78dc437c962g.jpg"
+width="1557"
+height="1550"
+srcset="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_8d7c024d-e5ba-4ac8-b1cc-78dc437c962g_hu_d9c309ee6522b671.jpg 480w, https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_8d7c024d-e5ba-4ac8-b1cc-78dc437c962g_hu_58c4f28338706c0f.jpg 1024w"
+loading="lazy"
+alt="img_v3_0213a_8d7c024d-e5ba-4ac8-b1cc-78dc437c962g"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+&gt;&lt;/p&gt;
+&lt;p&gt;做完这一切后 我会写一篇博客网站作为学习笔记&lt;/p&gt;
+&lt;p&gt;随时可以访问博客复习&lt;/p&gt;
+&lt;p&gt;这是我目前使用notebookml使用心得与体会&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_8d7c024d-e5ba-4ac8-b1cc-78dc437c962g.jpg"
+width="1557"
+height="1550"
+srcset="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_8d7c024d-e5ba-4ac8-b1cc-78dc437c962g_hu_d9c309ee6522b671.jpg 480w, https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_8d7c024d-e5ba-4ac8-b1cc-78dc437c962g_hu_58c4f28338706c0f.jpg 1024w"
+loading="lazy"
+alt="img_v3_0213a_8d7c024d-e5ba-4ac8-b1cc-78dc437c962g"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="241px"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;*自学还是需要个人努力 而不是更好的工具*&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;当然可能很肤浅 欢迎各位补充&lt;/p&gt;
+&lt;p&gt;see you&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_2ab61887-76c4-47ee-a1d4-e3955d60d5ag.jpg"
+width="5000"
+height="2813"
+srcset="https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_2ab61887-76c4-47ee-a1d4-e3955d60d5ag_hu_d503084b60c6e7f1.jpg 480w, https://yuban11451.github.io/p/notebookml%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C/img_v3_0213a_2ab61887-76c4-47ee-a1d4-e3955d60d5ag_hu_af931569024ab38c.jpg 1024w"
+loading="lazy"
+alt="img_v3_0213a_2ab61887-76c4-47ee-a1d4-e3955d60d5ag"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+&gt;&lt;/p&gt;</description></item></channel></rss>
