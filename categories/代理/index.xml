@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>代理 on 御坂11451</title><link>https://yuban11451.github.io/categories/%E4%BB%A3%E7%90%86/</link><description>Recent content in 代理 on 御坂11451</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>御坂11451</copyright><lastBuildDate>Fri, 17 Jul 2026 19:11:43 +0800</lastBuildDate><atom:link href="https://yuban11451.github.io/categories/%E4%BB%A3%E7%90%86/index.xml" rel="self" type="application/rss+xml"/><item><title>移动端更优雅访问外网</title><link>https://yuban11451.github.io/p/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%9B%B4%E4%BC%98%E9%9B%85%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%91/</link><pubDate>Fri, 17 Jul 2026 19:11:43 +0800</pubDate><guid>https://yuban11451.github.io/p/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%9B%B4%E4%BC%98%E9%9B%85%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%91/</guid><description>&lt;img src="https://yuban11451.github.io/p/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%9B%B4%E4%BC%98%E9%9B%85%E8%AE%BF%E9%97%AE%E5%A4%96%E7%BD%91/137483887_p0_master1200.jpg" alt="Featured image of post 移动端更优雅访问外网" /&gt;&lt;h1 id="使用surfing需求以及surfing模块介绍"&gt;&lt;strong&gt;使用surfing需求以及surfing模块介绍&lt;/strong&gt;
+&lt;/h1&gt;&lt;p&gt;我有很多需要翻到外网的需求&lt;/p&gt;
+&lt;p&gt;但是众所周知原因 在大陆使用外网很麻烦&lt;/p&gt;
+&lt;p&gt;启用clash 等待节点启动 打开谷歌服务 然后在打开网站app&lt;/p&gt;
+&lt;p&gt;有些过于麻烦 且代理软件全局代理会影响国内软件正常使用&lt;/p&gt;
+&lt;p&gt;我们可以使用surfing模块解决以上问题&lt;/p&gt;
+&lt;p&gt;以下是surfing模块介绍：&lt;/p&gt;
+&lt;p&gt;&lt;a class="link" href="https://github.com/GitMetaio/Surfing" target="_blank" rel="noopener"
+&gt;GitMetaio/Surfing: Magisk and KernelSU modules for Clash/mihomo services.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;本项目为 Clash/mihomo、sing-box、v2ray、xray、hysteria 的 &lt;a class="link" href="https://github.com/topjohnwu/Magisk" target="_blank" rel="noopener"
+&gt;Magisk&lt;/a&gt; 、 &lt;a class="link" href="https://github.com/tiann/KernelSU" target="_blank" rel="noopener"
+&gt;Kernelsu&lt;/a&gt; 、 &lt;a class="link" href="https://github.com/bmax121/APatch" target="_blank" rel="noopener"
+&gt;APatch&lt;/a&gt; 模块。支持 REDIRECT（仅 TCP）、TPROXY（TCP + UDP）透明代理，支持 TUN（TCP + UDP）亦可 REDIRECT（TCP）+ TUN（UDP） 混合模式代理。&lt;/p&gt;
+&lt;p&gt;基于上游为集成式一体服务、开箱即用
+此适用以下人群：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;懒癌&lt;/li&gt;
+&lt;li&gt;小白&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;项目主题及配置仅围绕 &lt;a class="link" href="https://github.com/MetaCubeX/Clash.Meta" target="_blank" rel="noopener"
+&gt;Clash/mihomo.Meta&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="准备工作"&gt;准备工作
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;一部已经解锁并root的安卓手机&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;下载好模块zip &lt;a class="link" href="https://github.com/GitMetaio/Surfing" target="_blank" rel="noopener"
+&gt;GitMetaio/Surfing: Magisk and KernelSU modules for Clash/mihomo services.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;3.熟悉并熟练使用root权限与模块加载&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一个代理节点（&lt;strong&gt;提前查明自己的节点支持客户端和格式&lt;/strong&gt;）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;安装模块&lt;/p&gt;
+&lt;img src="Screenshot_20260717_193048_KernelSU.jpg" alt="Screenshot_20260717_193048_KernelSU" style="zoom:25%;" /&gt;
+&lt;p&gt;lsp选择系统框架并重启&lt;/p&gt;
+&lt;p&gt;重启运行模块&lt;/p&gt;
+&lt;p&gt;进入surfing app&lt;/p&gt;
+&lt;img src="Screenshot_20260717_193320_SurfingTile.jpg" alt="Screenshot_20260717_193320_SurfingTile" style="zoom:25%;" /&gt;
+&lt;p&gt;目前我们常用的&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;第一栏logo 点击后可以对app就行更新&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第二栏 对代理进行配置&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;目前我们代理是没有启动状态 需要我们进行配置&lt;/p&gt;
+&lt;p&gt;点击下栏的设置&lt;/p&gt;
+&lt;img src="Screenshot_20260719_004646_SurfingTile.jpg" alt="Screenshot_20260719_004646_SurfingTile" style="zoom:25%;" /&gt;
+&lt;h2 id="配置"&gt;配置
+&lt;/h2&gt;&lt;p&gt;点击第二栏的配置覆写&lt;/p&gt;
+&lt;img src="Screenshot_20260717_194020_SurfingTile.jpg" alt="Screenshot_20260717_194020_SurfingTile" style="zoom:25%;" /&gt;
+&lt;h2 id="订阅管理"&gt;订阅管理
+&lt;/h2&gt;&lt;img src="Screenshot_20260719_000545_SurfingTile.jpg" alt="Screenshot_20260719_000545_SurfingTile" style="zoom:25%;" /&gt;
+&lt;p&gt;添加订阅&lt;/p&gt;
+&lt;img src="Screenshot_20260719_000716_SurfingTile.jpg" alt="Screenshot_20260719_000716_SurfingTile" style="zoom:25%;" /&gt;
+&lt;p&gt;复制订阅链接到URL&lt;/p&gt;
+&lt;p&gt;保存确定&lt;/p&gt;
+&lt;h2 id="按需调试"&gt;按需调试
+&lt;/h2&gt;&lt;img src="Screenshot_20260717_194020_SurfingTile.jpg" alt="Screenshot_20260717_194020_SurfingTile" style="zoom:25%;" /&gt;
+&lt;h3 id="dns模式"&gt;DNS模式
+&lt;/h3&gt;&lt;p&gt;Fake-IP（假IP）模式（目前最主流）
+代理软件不等待真实DNS结果，而是立即返回一个保留IP（如 198.18.x.x）给应用，同时后台去查真实IP。&lt;/p&gt;
+&lt;p&gt;优点：极速响应、无DNS污染，且分流只看域名，不需要等IP，效率极高。&lt;/p&gt;
+&lt;p&gt;缺点：部分不联网的本地服务或日志记录可能会留下“假IP”。&lt;/p&gt;
+&lt;p&gt;Redir-Host（真实IP模式）（传统模式）
+应用发起请求时，代理必须先向DNS服务器查询到真实IP，再用这个IP去匹配规则（如IP段）、发起连接。&lt;/p&gt;
+&lt;p&gt;· 优点：兼容性最好，所有应用都认真实IP。&lt;/p&gt;
+&lt;p&gt;· 缺点：慢（必须等DNS响应）；容易被ISP或GFW污染；且在TUN模式下，可能因为拿不到IP导致请求卡死。&lt;/p&gt;
+&lt;h3 id="入站模式"&gt;入站模式
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;REDIRECT（重定向）：传统Linux方法，靠修改数据包目标地址来劫持流量。仅支持TCP（不支持UDP，比如游戏语音、DNS会失效），且会丢失原始目标IP，可能导致分流不准。优点是资源占用极低。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TPROXY（透明代理）：REDIRECT的升级版。完美支持TCP+UDP，且不修改数据包头部，能完整保留原始目标IP，分流最精准。对游戏、VoIP等UDP应用最友好，是目前透明代理的最优解。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TUN（虚拟网卡）：在系统创建虚拟网卡，从更底层接管所有IP层数据（TCP/UDP/ICMP）。兼容性最强（连Ping都能代理），但性能开销最大，且在全局模式下最容易产生“意外流量”导致堆钱。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;“MIXED:REDIRECT TCP + TUN UDP” 是混合模式——即TCP走REDIRECT，UDP走TUN。兼顾了TCP的低延迟和UDP的兼容性，但在IP纯净度上不如纯TPROXY。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;纯TUN：所有流量（TCP+UDP+ICMP）全部强制塞进TUN虚拟网卡。系统层面完全感知不到代理，兼容性最强（连Ping命令都能走代理），且分流只看域名，极其精准。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="user-agent"&gt;user-Agent
+&lt;/h3&gt;&lt;p&gt;影响代理软件“自己”对外访问时的身份。&lt;/p&gt;
+&lt;p&gt;看机场支持客户端&lt;/p&gt;
+&lt;p&gt;clashwindows支持度更广&lt;/p&gt;
+&lt;p&gt;clashMetaForAndroid更新一点&lt;/p&gt;
+&lt;h1 id="配置完成右上角保存"&gt;&lt;strong&gt;配置完成右上角保存&lt;/strong&gt;
+&lt;/h1&gt;&lt;h2 id="应用过滤"&gt;应用过滤
+&lt;/h2&gt;&lt;img src="421f12a7a4a8666367a1779f7a407c56.jpg" alt="421f12a7a4a8666367a1779f7a407c56" style="zoom:25%;" /&gt;
+&lt;h3 id="tun过滤"&gt;tun过滤
+&lt;/h3&gt;&lt;h3 id="当你开启混合模式mixedredirect-tcp--tun-udp或纯tun模式需配置"&gt;当你开启混合模式“MIXED:REDIRECT TCP + TUN UDP”或纯tun模式需配置
+&lt;/h3&gt;&lt;p&gt;include与exclude 理解为白名单与黑名单&lt;/p&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;h3 id="当前模式-黑名单白名单"&gt;当前模式&amp;mdash;-黑名单白名单
+&lt;/h3&gt;&lt;p&gt;顾名思义黑名单白名单过滤代理&lt;/p&gt;
+&lt;p&gt;为了更好的环境我一般选择黑名单&lt;/p&gt;
+&lt;p&gt;但可能会遇到电话打不通 和短信接受延迟&lt;/p&gt;
+&lt;h4 id="黑名单问题解决方案"&gt;黑名单问题解决方案
+&lt;/h4&gt;&lt;p&gt;&lt;a class="link" href="https://xice.cx/posts/SurfingIssueOnSamsung/" target="_blank" rel="noopener"
+&gt;https://xice.cx/posts/SurfingIssueOnSamsung/&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id="配置完成右上角保存-1"&gt;&lt;strong&gt;配置完成右上角保存&lt;/strong&gt;
+&lt;/h1&gt;&lt;h1 id="启动服务"&gt;启动服务
+&lt;/h1&gt;&lt;p&gt;返回主菜单&lt;/p&gt;
+&lt;p&gt;点击启动服务&lt;/p&gt;
+&lt;img src="959c78d4d731cab0e1d3a00fddc6aba3.jpg" alt="959c78d4d731cab0e1d3a00fddc6aba3" style="zoom:25%;" /&gt;
+&lt;h1 id="end"&gt;end
+&lt;/h1&gt;&lt;p&gt;冲浪&lt;/p&gt;</description></item></channel></rss>
